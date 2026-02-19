@@ -17,7 +17,7 @@ env:
 jobs:
     deploy:
         name: Deploy
-        runs-on: mbp-13
+        runs-on: mbp-13-ubuntu
         environment: prod
         steps:
             - name: checkout
