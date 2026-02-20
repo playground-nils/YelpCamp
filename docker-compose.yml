@@ -4,7 +4,7 @@ services:
     app:
         image: ${IMAGE?}
         container_name: yelpcamp
-        restart: always
+        restart: unless-stopped
         networks:
             - traefik-public
         labels:
